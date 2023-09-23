@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@200&family=Quicksand:wght@400;500&family=Rubik+Iso&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    background-color: cornflowerblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    display: flex;
+    margin: 30px;
+    text-decoration: none;
+    color: rgb(245, 241, 236);
+}
+
+nav ul li a:hover {
+    color: rgb(45, 45, 136);
+    text-shadow: 2px 4px 8px rgb(69, 19, 125);
+}
+
+video {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    color: rgb(17, 5, 12);
+    text-shadow: 3px 4px 6px rgb(245, 241, 236);
+}
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+}
+
+span {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+#home::before {
+    content: "";
+    background-image: url('https://wallpapercave.com/wp/wp2120875.jpg');
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+#main {
+    position: absolute;
+    border: 2px ridge white;
+    padding: 50px;
+    top: 1300px;
+    left: 10%;
+    box-shadow: 4px 5px 4px 4px whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+h2:hover {
+    text-shadow: 3px 4px 5px wheat;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img {
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#pic p {
+    text-align: justify;
+    margin: 30px;
+}
+
+.gallery {
+    margin-left: 330px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.gallery img:hover {
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    margin: 60px;
+    border: 2px ridge rgb(9, 9, 21);
+    background: linear-gradient(to top, rgb(140, 117, 162) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box:hover {
+    border: none;
+    box-shadow: 3px 4px 4px 3px rgb(103, 103, 156);
+    background-position: bottom;
+
+}
+
+.box h4 {
+    text-align: center;
+    color: rgb(26, 11, 55);
+}
+
+.box p {
+    text-align: justify;
+    margin: 20px;
+}
+
+form {
+    width: 400px;
+    margin-left: 650px;
+}
+
+.input {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    padding-left: 170px;
+}
+
+/* Media query for 400px devices */
+@media screen and (max-width:400px) {
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li a {
+        margin: 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        font-size: small;
+        text-align: center;
+    }
+
+    #home {
+        height: 300px;
+    }
+
+    #home::before {
+        height: 300px;
+    }
+
+    #main {
+        top: 300px;
+        left: 15px;
+        padding: 3px;
+    }
+}
